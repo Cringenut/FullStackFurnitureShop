@@ -1,0 +1,16 @@
+INSERT INTO goods (Name, Description, Price, Stock, Category) VALUES
+('Wooden Dining Table', 'A solid oak dining table with a polished finish, seating up to 6 people.', 299.99, 10, 'Dining'),
+('Leather Sofa', 'A comfortable three-seater leather sofa with a modern design.', 599.99, 5, 'Living Room'),
+('Queen Size Bed Frame', 'A sturdy wooden bed frame with a sleek headboard.', 349.99, 8, 'Bedroom'),
+('Office Chair', 'Ergonomic office chair with lumbar support and adjustable height.', 129.99, 15, 'Office'),
+('Bookshelf', 'Tall wooden bookshelf with five spacious shelves.', 99.99, 12, 'Storage'),
+('Glass Coffee Table', 'Minimalist glass coffee table with a stainless steel frame.', 199.99, 7, 'Living Room'),
+('Chest of Drawers', 'Five-drawer wooden chest with a vintage finish.', 249.99, 6, 'Bedroom'),
+('Kitchen Cabinet', 'Spacious kitchen cabinet with multiple storage compartments.', 179.99, 4, 'Kitchen'),
+('Outdoor Patio Set', 'Rattan patio set including a table and four chairs.', 499.99, 3, 'Outdoor'),
+('TV Stand', 'Modern TV stand with storage compartments and cable management.', 149.99, 9, 'Living Room'),
+('Nightstand', 'Small wooden nightstand with a drawer and open shelf.', 59.99, 14, 'Bedroom'),
+('Recliner Chair', 'Comfortable reclining chair with soft fabric upholstery.', 399.99, 5, 'Living Room'),
+('Wardrobe', 'Spacious two-door wardrobe with hanging space and shelves.', 349.99, 6, 'Bedroom'),
+('Dining Chair Set', 'Set of four cushioned dining chairs with a wooden frame.', 199.99, 10, 'Dining'),
+('Shoe Rack', 'Compact wooden shoe rack with multiple tiers.', 79.99, 11, 'Storage');
