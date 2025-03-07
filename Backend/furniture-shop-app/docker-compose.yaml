@@ -1,10 +1,9 @@
-version: "3.7"
 services:
   api_service:
     build: .
     restart: always
     ports:
-      - 8080:8080
+      - "8080:8080"
     networks:
       - springapimysql-net
     environment:
@@ -12,7 +11,8 @@ services:
       - spring.datasource.username=root
       - spring.datasource.password=mysql
     depends_on:
-      - mysqldb
+      mysqldb:
+        condition: service_healthy
     volumes:
       - .m2:/root/.m2
 
@@ -25,9 +25,12 @@ services:
       - springapimysql-net
     environment:
       MYSQL_DATABASE: storedb
-      MYSQL_USER: root
-      MYSQL_PASSWORD: mysql
       MYSQL_ROOT_PASSWORD: mysql
+    healthcheck:
+      test: [ "CMD", "mysqladmin", "ping", "-h", "mysqldb", "-u", "root", "-pmysql" ]
+      interval: 10s
+      timeout: 30s
+      retries: 5
 
 networks:
   springapimysql-net:

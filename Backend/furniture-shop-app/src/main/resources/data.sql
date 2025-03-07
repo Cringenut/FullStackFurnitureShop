@@ -1,4 +1,4 @@
-INSERT INTO goods (Name, Description, Price, Stock, Category) VALUES
+INSERT INTO products (Name, Description, Price, Stock, Category) VALUES
 ('Wooden Dining Table', 'A solid oak dining table with a polished finish, seating up to 6 people.', 299.99, 10, 'Dining'),
 ('Leather Sofa', 'A comfortable three-seater leather sofa with a modern design.', 599.99, 5, 'Living Room'),
 ('Queen Size Bed Frame', 'A sturdy wooden bed frame with a sleek headboard.', 349.99, 8, 'Bedroom'),

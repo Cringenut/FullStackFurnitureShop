@@ -9,10 +9,11 @@ import lombok.Setter;
 @Data
 @Getter
 @Setter
-@Table(name = "furniture", schema = "StoreDB")
+@Table(name = "products")
 public class FurnitureEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "productID")
     private Long id;
 
     @Column(nullable = false)
